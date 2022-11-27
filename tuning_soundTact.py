@@ -151,7 +151,7 @@ class Tuning:
         return self.read('DOAANGLE')
 
     def loudness(self):
-        return 1/self.read('AGCGAIN')*100
+        return 1/self.read('AGCGAIN')*255
 
     @property
     def version(self):
